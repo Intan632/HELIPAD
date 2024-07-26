@@ -1,0 +1,79 @@
+%==================================================================
+% Ini adalah bab 1
+% Silahkan edit sesuai kebutuhan, baik menambah atau mengurangi \section, \subsection
+%==================================================================
+
+\chapter[PENDAHULUAN]{\\ PENDAHULUAN}
+
+\section{Latar Belakang Masalah}
+Pada saat ini teknologi penerbangan di Indonesia telah mengalami kemajuan yang sangat signifikan karena di dukung serta mendapat dorongan dari pemerintah \cite{ashari2021desain}. Bukti nyata dari kemajuan tersebut adalah diselenggarakannya Kontes Robot Terbang Indonesia(KRRTI) yang dilaksanakan setiap tahunya\cite{abbiyansyah2022navigasi}. Teknologi penerbangan memiliki fungsi pada berbagai bidang seperti pencarian, penyelamatan, pemadaman api saat terjadi kebakaran, pemantauan melalui udara, dan fotografi\cite{suprapto2017design}\cite{d2012unmanned}\cite{belloni2008mini}. 
+
+Salah satu teknologi yang dimaksud adalah hadirnya\textit{ Unmanned Aerial Vehicle}(UAV). UAV merupakan pesawat tanpa pilot yang dapat dioprasikan menggunakan remote kontrol atau juga dapat di kendalikan secara otomatis melalui program yang telah dikirimkan sebelumnya. UAV memiliki bentuk, konfigurasi, ukuran, karakter yang cukup bervariasi. UAV telah dikembangkan dengan memanfaatkan dua macam mode pesawat, diantaranya adalah mode \textit{fixed wing} dan \textit{multirotor} dengan berbagai macam \textit{frame}\cite{afifahrancang}. 
+
+Setiap UAV memiliki beberapa keunggulan, pada \textit{fixed wing} memiliki daya tahan terhadap waktu terbang dan area jelajah yang luas akan tetapi fixed wing memiliki kekurangan dari segi harga dan perlu ada peluncur ketika hendak \textit{take off}. Sedangkan untuk \textit{multirotor} memiliki kekurangan yaitu daya tahan serta kecepatan yang terbatas, untuk keunggulan dari \textit{multirotor} yaitu dapat terbang pada area yang lebih sempit dan tidak perlu memerlukan peluncur karena cara terbang pada multirotor adalah \textit{Vertical Takeoff and Landing} (VTOL)\cite{wahyudinjurusan}. Kelebihan menggunakan VTOL ialah memudahkan saat kendali kontrol autonomous dan menghindari area yang susah dijangkau serta tidak membutuhkan landasan yang sangat luas. Multirotor dibagi menjadi berbagai jenis berdasarkan jumlah motor, mulai dari \textit{bicopter, tricopter, quadcopter, heksacopter, octocopter}. Salah satu jenis multirotor yang sering digunakan adalah \textit{quadcopter}, tipe ini mempunyai motor penggerak dan baling baling dengan bentuk frame yang bermacam-macam. 
+
+Quadcopter saat menjalankan suatu misi, membutuhkan landasan untuk \textit{landing} berupa \textit{helipad}, maka diterapkan proses pengelolaan citra agar dapat melakukan deteksi objek landasan yang berupa huruf H dengan menggunakan pemrosesan gambar (\textit{image processing}) serta pengambilan video secara \textit{real-time}. Deteksi objek dalam hal \textit{image processing} digunakan sebagai penentu keberadaan objek sebagai masukan (\textit{input}) citra digital yang kemudian akan diolah menjadi kualitas yang lebih baik\cite{mulyawan2011identifikasi}.
+ 
+Penelitian mengenai deteksi objek \textit{helipad} telah dilakukan oleh berbagai peneliti, di antaranya \textit{Speeded Up Robust Features} (SURF) algorthm dengan pemrosesan gambar dan visual komputer menggunakan \textit{poin} pencocokan \textit{fitur} gambar, maka teknik berhasil mendeteksi \textit{helipad} tetapi tingkat akurasi yang masih kurang baik\cite{prakash2016autonomous}. Kemudian \textit{Scale Invariant Feature Transform}(SIFT) yang menggunakan bakat menggambar serta memcocokan konten gambar digital antara pemandangan yang berbeda dalam suatu adegan, namun fitur SIFT ini mendeskripsikan gambar yang memiliki ukuran besar dan lambat saat proses perhitungan\cite{cesetti2009vision}. Selanjutnya \textit{Normalized Wavalet Descriptor} (NWD) yang meneliti perbandingan performa antara NWD dengan momen geometris dan \textit{The Fourier Descriptor} (FD). Namun, penelitian yang dilakukan menggunakan database dari gambar halipad, belum diaplikasikan secara \textit{real-time}\cite{nsogo2007robust}. Kemudian metode \textit{Edge Distribution Function} (EDF) Algorithm berfungsi mendeteksi lingkaran luar serta mendeteksi huruf H dari \textit{helipad} yang dilakukan dengan memposisikan UAV tepat di atas \textit{helipad}. Kelemahan dari penelitian ini adalah semakin besar ukuran \textit{helipad} semakin lama operasi untuk mendeteksi \textit{helipad} tersebut\cite{lee2012implementation}.
+
+Penelitian yang disebutkan diatas memperoleh hasil deteksi pacu \textit{helipad} dengan keakuratan yang bagus. Namun, penelitian itu dinilai masih memiliki kekurangan dan masalah diantaranya adalah nilai keakurasian yang belum optimal dan kecepatan saat memperoses gambar yang tergolong membutuhkan waktu yang lama. Bidang penelitian tanah serta pergerakan dari kamera juga menjadi suatu kendala saat pengambilan gambar ataupun video secara \textit{real-time}. Sehingga, pada saat penelitian kali ini untuk deteksi landasan pacu \textit{helipad} digunakan metode algoritma \textit{You Only Look Once}(YOLO). Seperti pada penelitian Sabir Hossain dan Deokjin Lee\cite{hossain2019deep} yang menerapkan metode algoritma CNN untuk deteksi multi objek menggunakan UAV dengan berbagai macam metode seperti CNN, YOLO, dan \textit{Graphics Proccesing Unit}(GPU). Saat penelitian tersebut dilakukan algoritma YOLO dinilai cukup baik, hal tersebut dapat ditentukan dari hasil uji coba yang telah dilaksanakan.
+
+Yolo merupakan algoritma pengembangan yang menggunakan jaringan saraf dan digunakan sebagai deteksi objek secara \textit{real-time}. Yolo adalah salah satu hasil pengembangan dari metode algoritma CNN. Dalam penelitian \textit{quadcopter} penggunaan metode YOLO masih sangat jarang digunakan, maka dari itu metode YOLO akan digunakan untuk penelitian mendeteksi keberadaan landasan \textit{helipad} secara \textit{real-time}.
+ 
+
+\section{Identifikasi Masalah}
+Landasan merupakan hal yang dirasa tidak asing didengar dalam dunia penerbangan, menjadi sarana penting saat menjalankan transportasi udara. Landasan \textit{helipad} salah satu bagian dari landasan yang digunakan oleh penerbangan dalam hal ini digunakan \textit{Fixed Wing Drone} mode VTOL sebagai objek yang akan dideteksi dan akan mendarat di landasan tersebut. Kendala yang biasa terjadi pada UAV salah satunya kesulitan saat melakukan \textit{landing} pada landasan. Kesulitan ini bisa diatasi dengan pembaharuan pada UAV yakni dengan mengambangkan visi \textit{landing} dengan cara melakukan deteksi pada \textit{helipad} guna mengurangi resiko kecelakaan yang bisa merugikan banyak pihak dan kemungkinan dapat menyababkan kematian. Pengambangan teknologi seperti deteksi landasan \textit{helipad} ini dapat memudahkan UAV untuk mendarat secara benar dan tepat sasaran, yaitu dengan deteksi landasan menggunakan misi visi dari kamera yang diletakan pada bagian bawah UAV. 
+
+Maka sebab itu, pemanfaatan penggunaan teknologi \textit{image processing} perlu diterapkan. Namun pengembangan metode ini, tingkat keakurasian dan kecepatan proses deteksi masih perlu dikembangkan dalam teknologi \textit{image processing} tersebut. Berbagai macam metode yang bisa digunakan guna mendeteksi landasan \textit{helipad} meliputi kelebihan serta kekurangan yang dimiliki oleh metode tersebut.
+
+\section{Batasan Masalah}
+Batasan masalah dari penelitia ini adalah sebagai begikut :
+\begin{packed_item}
+	\item [1.] Wahana yang digunakan adalah \textit{quadcopter}
+	\item [2.]Operasional \textit{quadcopter} dibatasi pada kondisi lingkungan \textit{outdoor} dengan keadaan angin yang relatif tenang, pencahayaan rendah dan cuaca ekstrem.
+	\item [3.]Pengiriman misi melalui telemetri ke \textit{quadcopter} dibatasi jarak antara latop dan \textit{quadcopter} yang tidak lebih dari 3 meter, karena jika lebih pengiriman misi akan terputus.
+	\item [4.]Algoritma YOLO akan memakai media \textit{platfrom} Python.
+	\item [5.]Objek yang dideteksi merupakan landasan helipad.
+	\item [6.]Pengambilan gambar objek deteksi oleh \textit{quadcopter} akan dilakukan pada lapangan luas dan secara \textit{real-time}.
+	
+\end{packed_item}
+
+\section{Rumusan Masalah}
+Dari latar belakang yang telah diuraikan, identifikasi masalah penelitian ini adalah:
+
+\begin{packed_item}
+	\item [1.] Bagaimana desain \textit{quadcopter} yang menggunakan helipad sebagai pemandu untuk pendaratan?
+    \item [2.]Bagaimana cara mengimplementasikan metode algoritma YOLO pada sistem \textit{quadcopter} agar memastikan pendaratan aman dan efisien?
+    \item [3.]Bagaimana perancangan sistem deteksi \textit{Landing Pad}?
+\end{packed_item}
+
+\section{Tujuan}
+Adapun tujuan dari penelitian ini ialah sebagai berikut:
+\begin{packed_item}
+	\item [1.] Mengimplementasikan sistem deteksi objek guna deteksi landasan \textit{helipad} yang digunakan pada \textit{quadcopter}.
+	\item [2.]Mengembangkan serta menguji hasil performasi metode YOLO dalam deteksi landasan \textit{helipad} yang dapat diterapkan pada \textit{quadcopter}.
+\end{packed_item}
+
+\section{Manfaat}
+Manfaat yang dapat diharapkan dari penelitian ini ialah pendaratan dilakukan secara otomatis pada landasan \textit{helipad} ditentukan dengan acuan citra. Selain manfaat tersebut penelitian ini juga bermanfaat untuk mahasiswa dan perkembangan IPTEK, berikut penjabaran dari maanfaat tersebut:
+
+\subsection{Mahasiswa}
+Mahasiswa dapat meningkatkan pengetahuan serta pengalaman pada bidang robot terbang khususnya \textit{quadcopter} untuk kemudian dikembangkan lebih lanjut agar dapat bermanfaat di masa selanjutnya.
+\subsection{IPTEK}
+\begin{packed_item}
+	\item [a.]Mengabungkan bidang ilmu pengetahuan yakni elektronika, sistem kontrol, dan pemrograman.
+	\item [b.]Berpotensi untuk dikembangkan supaya dapat meringankan pekerjaan manusia.
+	\item [c.]Peningkatan akurasi dan efisiensi \textit{quadcopter} dalam melakukan tugas tugas spesifikasi seperti pendaratan otomatis di \textit{helipad}.
+\end{packed_item}
+
+
+\section{Keaslian Gagasan}
+Berbagai macam penelitian yang telah dilakukan dengan berbagai metode mengenai \textit{object detection} untukk deteksi \textit{helipad}, seperti yang telah dilaukan oleh R om Prakash dan kawan kawan yang melakukan percobaan deteksi \textit{helipad} dengan menggunakan metode \textit{Speeded Up Robust Features} (SURF). Metode ini dilakukan dengan cara mencocokan titik fitur dari gambar yang telah diambil sebelumnya. Mereka membandingkan metode SURF dengan SIFT, dari perbandingan yang telah dilakukan SURF lebih unggul dibandingkan dengan SIFT, dimana SURF lebih kuat pada perubahan skala, rotasi dalam dan luar pesawat. Pada penelitian tersebut didapatkan hasil bahwa metode ini dapat melakukan deteksi dalam kurun waktu rata-rata 28ms sedangkan SIFT 60ms\cite{prakash2016autonomous}. Namun didapatkan kekurangan dalam penelitian ini ialah hanya menggunakan tamplate gambar yang telah ada, tidak dilakukan secara \textit{real time} atau dilakukan secara manual.
+
+Penelitian lainnya yang dilakukan Andrea Casetti dan kawan kawan metode yang dibahas ialah metode \textit{Scale Invariant Feature Transform}(SIFT) yang memiliki fitur invarian pengambaran yang lebih kuat dan menyesuaikan antara konten gambar yang digital dengan pemandangan yang beda. Mereka memakai SIFT dengan dua cara yang berbeda, yakni dengan membagi gambar dalah sebuah sub gambar dan menyesuaikan parameter SIFT untuk setiap sub pada gambar dan menghitung ektrasi fitur, hanya jika bermanfaat. Hasil yang didapatkan pada penelitian yang dilakukan ialah deteksi \textit{helipad} membutuhkan waktu 60ms dan proses 5\textit{fps}.Pendeksripsian visi yang tergolong besar dan memakan waktu yang lama, lingkungan yang tidak dikenal dan keamanan dalam menghindari berbagai hambatan serta tidak stabil efek tanah menjadu kekurangan dalam penelitian yang dilaksakan tersebut\cite{cesetti2009vision}.
+
+Selain itu, metode \textit{Normalized Wavelet Desciptor}(NWD) yang dikembangkan oleh G. F. Nsgo serta tim yang menunjukan perbandingan kinerja metode NWD dengan momen geometris dan \textit{Fourier Desriptor} memanfaatkan database gambar, dengan menggunakan fitur garis tepi \textit{helipad} dan algoritma untuk setiap gambar yang digunakan, dengan dikembangankan [penelitian ini akan berguna untuk sebagian besar jenis objek pendaratan, tidak terbatas pada \textit{helipad} saja. Mereka melakukan pengujian dengan menggunakan database gambar \textit{helipad} dengan 153 gambar, hasilnya 151 gambar berhasil terdetksi dengan persentase keberhasilan 98,7\%\cite{nsogo2007robust}. Namun dari keberhasilan yang terjadi, mereka masih menggunakan database dari gambar \textit{helipad} dan belum melakukan pengujian metode secara \textit{real time.}
+
+Selanjutnya penelitian yang di lakukan Sewon Lee, Kwangryul Baek dan temanya Jiwon Jang dengan menggunakan metode \textit{Edge Distribution Function}(EDF)\cite{lee2012implementation}. Dengan menggunakan algoritma morfologi sederhana dan EDF guna mengekstrak fitur \textit{helipad}. Mereka mengektrak fitur \textit{helipad} menjadi dua langkah pengerajaan, yaotu dengan ektrasksi fitur lingkaran luar dan karakter dalam huruf H. penelitian ini menggunakan proses ADSP-BF548 \textit{Blackfin}. Didapatkan hasil deteksi \textit{helipad} dengan tingkat kecepatan pemprosesan 10 \textit{fps} dengan 15000 data gambar pada ketinggian 15 meter serta waktu 13 sampai dengan 15 detik. Mereka menyampaikan bahwa yang menjadi kelemahan saat penelitian ialah semakin besar ukuran \textit{helipad} maka semakin lama sistem dapat beroprasi untuk mendeteksi halipad tersebut.
+
+Pada penelitian ang telah disebutkan sebelumnya, terdapat beberapa kelamahan dan kekurangan yang akan menjadi kendala dalam deteksi \textit{helipad}. Maka dari itu, digunakan metode YOLO sebagai deteksi landasan \textit{helipad}. Dalam penelitian Sabir Hossain dan Deokjin Lee\cite{hossain2019deep}, Yolo mampu mendeteksi berbagai jenis objek seperti pohon, manusia, mobil pada pengaplikasian UAV dengan jarak berkisar 2-39 \textit{fps} tergantung pada sistem yang dipakai dengan tingkat akurasi mencapai 81\% sampai dengan 85\%.

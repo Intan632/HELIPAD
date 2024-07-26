@@ -1,0 +1,32 @@
+%==================================================================
+% Ini adalah file utama dari dokumen LaTeX ini
+%==================================================================
+
+%% DILARANG EDIT BAGIAN INI
+\documentclass[12pt, a4paper, onecolumn, oneside, final]{report}
+
+\input{a0-identitas}
+\input{untouch/xx-preambles}
+\input{a1-database.hyphenate}
+
+\begin{document}
+
+\include{untouch/xx-sampul}
+\pagenumbering{roman}
+\include{untouch/xx-sampuldalam}
+\begin{singlespace}
+
+\end{singlespace}
+\include{untouch/xx-persetujuan}
+\include{untouch/xx-daftar}
+\pagenumbering{arabic}
+
+\begin{doublespace}
+\include{b1-bab1}
+\include{b2-bab2}
+\include{b3-bab3}
+\end{doublespace}
+\input{untouch/xx-daftarpustaka}
+
+\end{document}
+%% DILARANG EDIT BAGIAN INI

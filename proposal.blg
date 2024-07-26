@@ -1,0 +1,88 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: proposal.aux
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+The style file: newapa.bst
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: untouch/xx-sampul.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
+A level-1 auxiliary file: untouch/xx-sampuldalam.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
+A level-1 auxiliary file: untouch/xx-persetujuan.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: untouch/xx-daftar.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+A level-1 auxiliary file: b1-bab1.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+A level-1 auxiliary file: b2-bab2.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+A level-1 auxiliary file: b3-bab3.aux
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Database file #1: a7-pustaka.bib
+Repeated entry---line 143 of file a7-pustaka.bib
+ : @article{mulyawan2011identifikasi
+ :                                  ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "priandana2020development"
+Warning--I didn't find a database entry for "wu2024enterpris"
+Warning--empty year in afifahrancang
+Warning--empty journal in afifahrancang
+You can't pop an empty literal stack for entry afifahrancang
+while executing---line 1459 of file newapa.bst
+Warning--can't use both volume and number fields in fauyan2023perancangan
+Warning--empty journal in hanif2023pengaruh
+You can't pop an empty literal stack for entry hanif2023pengaruh
+while executing---line 1459 of file newapa.bst
+You can't pop an empty literal stack for entry mulyawan2011identifikasi
+while executing---line 1459 of file newapa.bst
+You can't pop an empty literal stack for entry satriawan2023model
+while executing---line 1459 of file newapa.bst
+Warning--empty year in wahyudinjurusan
+Warning--empty journal in wahyudinjurusan
+You can't pop an empty literal stack for entry wahyudinjurusan
+while executing---line 1459 of file newapa.bst
+Warning--empty journal in wu2024enterprise
+You can't pop an empty literal stack for entry wu2024enterprise
+while executing---line 1459 of file newapa.bst
+You've used 40 entries,
+            2708 wiz_defined-function locations,
+            821 strings with 12890 characters,
+and the built_in function-call counts, 19168 in all, are:
+= -- 1759
+> -- 855
+< -- 33
++ -- 317
+- -- 315
+* -- 1771
+:= -- 3582
+add.period$ -- 125
+call.type$ -- 40
+change.case$ -- 338
+chr.to.int$ -- 40
+cite$ -- 47
+duplicate$ -- 754
+empty$ -- 1238
+format.name$ -- 365
+if$ -- 3563
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 39
+newline$ -- 203
+num.names$ -- 160
+pop$ -- 285
+preamble$ -- 1
+purify$ -- 383
+quote$ -- 0
+skip$ -- 568
+stack$ -- 0
+substring$ -- 1200
+swap$ -- 228
+text.length$ -- 13
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 236
+warning$ -- 7
+while$ -- 180
+width$ -- 0
+write$ -- 522
+(There were 7 error messages)
