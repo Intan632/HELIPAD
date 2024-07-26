@@ -1,0 +1,9 @@
+path: ../content/yolov5/HELIPAD # dataset root dir
+train: train/images
+val: valid/images
+test: test/images
+
+# Classes
+names:
+  0: helipad
+
